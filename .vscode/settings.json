@@ -1,0 +1,14 @@
+{
+    "livePreview.defaultPreviewPath": "/index.html",
+    "files.exclude": {
+        "__init__.py": true,
+        ".gitignore": true,
+        "LICENSE": true,
+        "desktop.ini": true,
+        ".github":true,
+        ".vscode":true,
+    },
+    "workbench.tree.indent": 28,
+    "git.postCommitCommand": "push",
+}
+
