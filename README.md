@@ -1,9 +1,20 @@
+# DSA
+
+## 逻辑结构
+
+1. 集合：彼此无关
+2. 线性：1-1
+3. 树形：1-n
+4. 图形：n-n
+
+## 物理结构
+1. 顺序存储：排队
+2. 链式存储：叫号
+
+## ADT Abstract Data Strucuture
 
 
 
-# Tkinter GUI Programming by Example
-This is the code repository for [Tkinter GUI Programming by Example](https://www.packtpub.com/application-development/tkinter-gui-programming-example?utm_source=github&utm_medium=repository&utm_campaign=9781788627481), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the book from start to finish.
-## About the Book
 This book will get you up and running with Tkinter by creating some fun and interactive projects. These projects have a varying degree of complexity. We’ll start with a simple project where you'll learn the fundamentals of GUI programming and the basics of working with a Tkinter application. After getting the basics right, we'll move on to creating a project of slightly-increased complexity, such as a highly-customizable Python editor, where you'll learn about Tkinter widgets, event handlers, and more.
 
 With the next project, we'll crank up the complexity level to create an instant messaging app, where you’ll learn about network, multithreading, and database programming. The aim is to strengthen your foundation with the Tkinter framework. Towards the end, we’ll discuss various ways of packaging our applications so that they can be shared and installed on other machines without the user needing to learn how to install and run Python programs.
