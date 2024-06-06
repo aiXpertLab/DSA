@@ -7,6 +7,7 @@
         "desktop.ini": true,
         ".github":true,
         ".vscode":true,
+		"/utils/__pycache__":true,
     },
     "workbench.tree.indent": 28,
     "git.postCommitCommand": "push",
