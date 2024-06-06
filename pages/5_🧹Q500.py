@@ -20,19 +20,19 @@ for div in range(num_int):
 st.success(prime)
 #------------------------------------------------------------------------------------------------
 st.info('2) Write a Python function to find the largest continuous sum in a given list of integers.')
-st.info('list = [2, 8, 1, 29, 2, -50, 7]')
-list = [2, 8, 1, 29,30, 12,13,14,15, 16 -50, 7]
-list = [1,2,-5, -7, 8,9,10, 101, 102]
-def max_subarray_sum(arr):
-    max_sum = current_sum = arr[0]
-    for num in arr[1:]:
-        current_sum = max(num, current_sum + num)
-        max_sum = max(max_sum, current_sum)
-    return max_sum
+st.info('list1 = [2, 8, 1, 29, 2, -50, 7]')
+# list1 = [2, 8, 1, 29,30, 12,13,14,15, 16 -50, 7]
+# list1 = [1,2,-5, -7, 8,9,10, 101, 102]
+# def max_subarray_sum(arr):
+#     max_sum = current_sum = arr[0]
+#     for num in arr[1:]:
+#         current_sum = max(num, current_sum + num)
+#         max_sum = max(max_sum, current_sum)
+#     return max_sum
 
-# Example usage:
-# st.text(max_subarray_sum([-2, -3, 4, -1, -2, 1, 5, -3]))  # Output: 7
-st.text(max_subarray_sum(list))  # Output: 7
+# # Example usage:
+# # st.text(max_subarray_sum([-2, -3, 4, -1, -2, 1, 5, -3]))  # Output: 7
+# st.text(max_subarray_sum(list))  # Output: 7
 #------------------------------------------------------------------------------------------------
 st.info('4) What is the purpose of the ‘enumerate’ function in Python? Provide an example.')
 st.text('enumerate provides a convenient way to access both the index and the value of items in a list, making it useful for loops where you need both.')
@@ -62,3 +62,35 @@ st.info('7) What is the difference between a list comprehension and a generator 
 squares = [x**2 for x in range(10)]
 st.write(squares)
 
+#------------------------------------------------------------------------------------------------
+st.info('8) Write a Python function to check whether a given string is a palindrome')
+st1 = '123456'
+st2 = st1[::-1]    
+st.text(f'{st1} {st2}')
+
+#------------------------------------------------------------------------------------------------
+st.info('9) Write a Python function to find the second highest number in a list.')
+nl = [5, 2, 8, 0, 8]
+nlset = set(nl)
+mylist = list(nlset)
+mylist.sort()
+st.write(mylist[-2])
+
+#------------------------------------------------------------------------------------------------
+st.info('10) Write a Python function to count the number of vowels in a given string.')
+vowelList = list('aeiouAEIOU')
+
+def countVowels(para_str):
+    assert isinstance(para_str, str), "Input must be a string"
+    newStr = para_str    
+    print(newStr)
+    for s in vowelList:
+        newStr = newStr.replace(s,'')
+        
+    return (len(para_str) - len(newStr))
+
+def count_vowels(s): return sum(1 for char in s if char.lower() in 'aeiou')
+
+st.write(countVowels('abceasdafsa'))
+
+# https://levelup.gitconnected.com/not-another-python-interview-guide-top-501-problems-to-solve-part-1-24441d435932
