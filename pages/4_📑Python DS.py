@@ -5,9 +5,10 @@ from utils.tab_python_ds import Stack
 st.set_page_config(page_title='👋 AI',  page_icon="🚀",)
 st.title('🔍 AI')
 st_def.st_logo()
-#------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 tab1, tab2 = st.tabs(["Stacker", "Display the Data"])
-with tab1: 
+
+with tab1:
     stack = Stack()
     stack.push(1)
     stack.push(2)
